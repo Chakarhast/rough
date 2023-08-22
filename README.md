@@ -20,6 +20,28 @@ Root Directory: with-bonus
 └── makefile
 
 ```
+```mermaid
+graph TD
+  root[Root Directory]
+  root --> launcher[launcher]
+  root --> loader[loader]
+  root --> bin[bin]
+  root --> test[test]
+  root --> makefile[makefile]
+
+  launcher --> launch_c[launch.c]
+  launcher --> launcher_makefile[makefile]
+
+  loader --> loader_h[loader.h]
+  loader --> loader_c[loader.c]
+  loader --> loader_makefile[makefile]
+
+  test --> fib_c[fib.c]
+  test --> test_makefile[makefile]
+```
+
+
+
 ## Folder: Loader
 ### loader.h
 
